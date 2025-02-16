@@ -126,7 +126,7 @@ export function PrayerSection() {
           </div>
         </motion.div>
         <h2 className="text-3xl font-bold mt-20 text-center">Intensi Doa Bapa Suci</h2>
-        <div className="flex justify-center justify-items-center align-middle p-20">
+        <div className="flex justify-center justify-items-center align-middle pt-20">
           <Carousel
             opts={{
               align: "start",

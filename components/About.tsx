@@ -51,7 +51,7 @@ export function AboutSection() {
   }
   return (
     <section className="py-16 dark:bg-black ">
-      <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 3 }}>
+      <motion.div initial={{ opacity: 0, x: -300 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 3 }}>
         <div className="flex justify-self-center">
           <Image src="/luce_friends.png" alt="Luce" width={480} height={480} className="p-4" />
         </div>
@@ -71,7 +71,8 @@ export function AboutSection() {
             </CardHeader>
             <CardContent>
               <motion.p whileHover={{ fontWeight: "bold", color: "#EABDE6" }}>
-                Mendapatkan Indulgensi Penuh pada tahun rahmat yubelium
+                Mendapatkan Indulgensi Penuh pada tahun rahmat yubelium, untuk kami berdua, orang tua serta saudara kami
+                yang telah meninggal dunia.
               </motion.p>
             </CardContent>
           </Card>
@@ -81,8 +82,8 @@ export function AboutSection() {
             </CardHeader>
             <CardContent>
               <motion.p whileHover={{ fontWeight: "bold", color: "#EABDE6" }}>
-                Mengunjungi sebanyak mungkin Porta Sancta di Sembilan Dekenat KAJ, mendoakan penuh 12 intensi doa Bapa
-                Suci
+                Mengunjungi sebanyak mungkin Porta Sancta di Sembilan Dekenat KAJ, mendoakan penuh Dua Belas intensi doa
+                Bapa Suci, Sakramen tobat, perbuatan Amal Kasih kepada sesama yang membutuhkan.
               </motion.p>
             </CardContent>
           </Card>
@@ -92,7 +93,8 @@ export function AboutSection() {
             </CardHeader>
             <CardContent>
               <motion.p whileHover={{ fontWeight: "bold", color: "#EABDE6" }}>
-                Berkunjung setidaknya Dua Gereja dalam sebulan dari Januari sampai Desember 2025.
+                Berkunjung setidaknya Dua Gereja dalam sebulan dari Januari sampai Desember 2025, berkunjung ke
+                gereja-gereja di Sembilan Dekenat Keuskupan Agung Jakarta.
               </motion.p>
             </CardContent>
           </Card>
