@@ -105,39 +105,45 @@ export function PrayerSection() {
           <div className="container mx-auto w-full lg:w-2/3">
             <Card className="flex-shrink-0  mx-4 bg-primary-foreground text-primary border-transparent">
               <CardContent className="p-4 ml-2 h-full">
-                <p className="text-lg font-medium dark:text-blue-200">
+                <p className="text-lg text-center font-medium dark:text-blue-200">
                   Bapa yang ada di Surga, semoga iman yang telah Engkau anugerahkan kepada kami dalam Putra-Mu, Yesus
                   Kristus, saudara kami, dan nyala api cinta kasih yang dicurahkan ke dalam hati kami oleh Roh Kudus,
                   membangkitkan pengharapan yang mulia akan kedatangan Kerajaan-Mu di dalam diri kami.
                 </p>
-                <p className="text-lg font-medium dark:text-blue-200">
+                <p className="text-lg text-center font-medium dark:text-blue-200">
                   Semoga rahmat-Mu mengubah kamimenjadi penabur-penabur yang gigihakan benih- benih Injil yang
                   menghidupkan umat manusia dan seluruh alam semesta dalam penantian yang penuh iman akan Surga dan Bumi
                   baru, ketika mengalahkan kekuatan jahat, kemuliaan-Mu akan dinyatakan untuk selama-lamanya.
                 </p>
-                <p className="text-lg font-medium dark:text-blue-200">
+                <p className="text-lg text-center font-medium dark:text-blue-200">
                   Semoga rahmat Tahun Yubileum ini menghidupkan kembali dalam diri kami, para peziarah pengharapan,
                   kerinduan akan harta surgawi, dan curahkanlah bagi seluruh dunia, sukacita dan damai dari Sang Penebus
                   kami. Bagi-Mu, ya Allah yang Mahakuasa, pujian dan kemuliaan sepanjang segala masa.
                 </p>
-                <p className="text-lg font-medium dark:text-blue-200">Amin.</p>
+                <p className="text-lg  text-center font-medium dark:text-blue-200">Amin.</p>
               </CardContent>
             </Card>
           </div>
         </motion.div>
         <h2 className="text-3xl font-bold mt-20 text-center">Intensi Doa Bapa Suci</h2>
-        <div className="p-20">
-          <Carousel>
-            <CarouselContent>
+        <div className="flex justify-center justify-items-center align-middle p-20">
+          <Carousel
+            opts={{
+              align: "start",
+            }}
+            orientation="vertical"
+            className="w-full max-w-lg"
+          >
+            <CarouselContent className="-mt-1 w-[500px] h-[400px] ">
               {[...prayers, ...prayers].map((prayer, index) => (
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3" key={index}>
-                  <Card className="flex-shrink-0 w-80 h-full mx-4 bg-primary-foreground text-primary mt-10 border-transparent">
+                <CarouselItem className="md:basis-1/1 lg:basis-1/1" key={index}>
+                  <Card className="flex-shrink-0  h-full mx-4 bg-primary-foreground text-primary mt-10 border-transparent">
                     <CardTitle className="p-4 ml-2 dark:text-blue-300">
-                      <p className="text-2xl font-bold">{prayer.bulan}</p>
+                      <p className="text-2xl font-bold text-center">{prayer.bulan}</p>
                     </CardTitle>
-                    <CardHeader className="text-lg font-bold">{prayer.header}</CardHeader>
-                    <CardContent className="p-4 ml-2 h-full">
-                      <p className="text-lg font-medium dark:text-blue-200">{prayer.content}</p>
+                    <CardHeader className="text-lg font-bold text-center">{prayer.header}</CardHeader>
+                    <CardContent>
+                      <p className="text-lg text-center font-medium dark:text-blue-200">{prayer.content}</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
