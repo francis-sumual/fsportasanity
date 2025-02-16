@@ -134,7 +134,7 @@ export function PrayerSection() {
             orientation="vertical"
             className="w-full max-w-lg"
           >
-            <CarouselContent className="-mt-1 w-[500px] h-[400px] ">
+            <CarouselContent className="-mt-1 w-80 max-h-96 mx-auto">
               {[...prayers, ...prayers].map((prayer, index) => (
                 <CarouselItem className="md:basis-1/1 lg:basis-1/1" key={index}>
                   <Card className="flex-shrink-0  h-full mx-4 bg-primary-foreground text-primary mt-10 border-transparent">
@@ -143,7 +143,7 @@ export function PrayerSection() {
                     </CardTitle>
                     <CardHeader className="text-lg font-bold text-center">{prayer.header}</CardHeader>
                     <CardContent>
-                      <p className="text-lg text-center font-medium dark:text-blue-200">{prayer.content}</p>
+                      <p className="text-sm text-center font-medium dark:text-blue-200">{prayer.content}</p>
                     </CardContent>
                   </Card>
                 </CarouselItem>
